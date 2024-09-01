@@ -26,7 +26,7 @@ public class AioServer extends Thread {
                     .open(AsynchronousChannelGroup.withCachedThreadPool(Executors.newCachedThreadPool(), 10));
             //绑定端口号
             serverSocketChannel.bind(new InetSocketAddress(7397));
-            System.out.println("netty-demo server start done");
+            System.out.println("netty-aio-demo server start done");
             // 等待
             CountDownLatch latch = new CountDownLatch(1);
             serverSocketChannel.accept(this, new AioServerChannelInitializer());

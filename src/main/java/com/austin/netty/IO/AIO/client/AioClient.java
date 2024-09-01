@@ -16,7 +16,7 @@ public class AioClient {
     public static void main(String[] args) throws Exception {
         AsynchronousSocketChannel socketChannel = AsynchronousSocketChannel.open();
         Future<Void> future = socketChannel.connect(new InetSocketAddress("127.0.0.1", 8080));
-        System.out.println("netty-demo client start done");
+        System.out.println("netty-aio-demo client start done");
         future.get();
         socketChannel.read(ByteBuffer.allocate(1024), null, new AioClientHandler(socketChannel, Charset.forName("GBK")));
         Thread.sleep(100000);
