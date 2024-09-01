@@ -10,4 +10,8 @@ NIO: selector主动轮询channel→处理请求→处理完成
 
 AIO:发起请求→通知回调
 
-### AIO案例代码
+### AIO案例代码 
+### BIO案例代码
+
+### record
+2024-09-01 更新aio bio案例，运用适配器模式对客户端和服务端处理【adapter适配器，handler处理器】
