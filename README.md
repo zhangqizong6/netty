@@ -17,6 +17,6 @@ AIO:发起请求→通知回调
 ### NIO案例代码 com/austin/netty/IO/NIO
 
 ### record
-2024-09-01 更新aio bio案例，运用适配器模式对客户端和服务端处理【adapter适配器，handler处理器】
-2024-09-02 新增nio案例代码,同样是基于以实现aio bio的设计模式
-2024-09-03 新增netty案例代码 修改pom文件
+###2024-09-01 更新aio bio案例，运用适配器模式对客户端和服务端处理【adapter适配器，handler处理器】
+###2024-09-02 新增nio案例代码,同样是基于以实现aio bio的设计模式
+###2024-09-03 1.新增netty案例代码 修改pom文件 2.用netty编写一个能接收数据的socketServer服务端
