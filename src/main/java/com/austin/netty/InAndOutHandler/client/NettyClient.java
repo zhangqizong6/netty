@@ -9,7 +9,9 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
  * @ClassName: NettyClient
- * @description:
+ * @description: 如果每个客户端连接都新建一个ChannelHandler实例，当有大量客户端时，服务器将保存大量的ChannelHandler实例。
+ *   为此，Netty提供了Sharable注解，如果一个ChannelHandler状态无关，那么可将其标注为Sharable，
+ *   如此，服务器只需保存一个实例就能处理所有客户端的事件。
  * @author: zqz
  * @date: 2024/10/17 16:52
  */
