@@ -32,3 +32,5 @@ record:
 - 2024-09-11 socket模拟器链接我们的NettyServer
 - 2024-09-13 NettyClient半包粘包处理、编码解码处理、收发数据方式
 - 2024-09-13_2 自定义编码解码器，来处理字节码传输，并控制半包、粘包以及安全问题,通过自定义MyDecoder和MyEncoder
+- 2024-10-17 使用ChannelOutboundHandlerAdapter与ChannelInboundHandlerAdapter。用于在消息管道中不同时机下处理处理消息。
+
