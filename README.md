@@ -34,4 +34,8 @@ record:
 - 2024-09-13_2 自定义编码解码器，来处理字节码传输，并控制半包、粘包以及安全问题,通过自定义MyDecoder和MyEncoder
 - 2024-10-17 使用ChannelOutboundHandlerAdapter与ChannelInboundHandlerAdapter。用于在消息管道中不同时机下处理处理消息。
 - 2024-10-17_2 netty的UDP通信方式
+- 2024-10-18 Netty搭建Http服务
+  在后端开发中，目前大多数都是基于servlet容器实现的http服务，往往有一些核心的子系统对性能的要求非常高，这时候就需要选择nio的网络模型来实现http服务，
+  由此来提高性能和吞吐量，netty除了开发网络应用方便之外，还内置了HTTP相关的编解码器，让用户可以很方便的开发出高性能的HTTP协议的服务，
+  同时主流的Spring Webflux默认是使用的Netty
 
