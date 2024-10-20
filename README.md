@@ -39,3 +39,5 @@ record:
   由此来提高性能和吞吐量，netty除了开发网络应用方便之外，还内置了HTTP相关的编解码器，让用户可以很方便的开发出高性能的HTTP协议的服务，
   同时主流的Spring Webflux默认是使用的Netty
 
+- 2024-10-20 Netty与SpringBoot整合
+
