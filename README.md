@@ -41,4 +41,5 @@ record:
 
 - 2024-10-20 Netty与SpringBoot整合
 - 2024-10-21 Netty使用Protobuf传输数据test
+- 2024-10-22 Netty使用Protobuf传输数据补充
 

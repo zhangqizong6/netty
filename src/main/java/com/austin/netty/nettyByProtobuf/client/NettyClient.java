@@ -1,5 +1,6 @@
-package com.austin.netty.netty0913;
+package com.austin.netty.nettyByProtobuf.client;
 
+import com.austin.netty.nettyByProtobuf.util.MsgUtil;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
@@ -11,7 +12,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
  * @ClassName: NettyClient
  * @description:
  * @author: zqz
- * @date: 2024/9/13 22:08
+ * @date: 2024/10/22 00:05
  */
 
 public class NettyClient {
@@ -30,6 +31,13 @@ public class NettyClient {
             b.handler(new MyChannelInitializer());
             ChannelFuture f = b.connect(inetHost, inetPort).sync();
             System.out.println("itstack-demo-netty client start done.");
+
+            f.channel().writeAndFlush(MsgUtil.buildMsg(f.channel().id().toString(),"你好，使用protobuf通信格式的服务端，我是sb"));
+            f.channel().writeAndFlush(MsgUtil.buildMsg(f.channel().id().toString(),"你好，使用protobuf通信格式的服务端，我是sb"));
+            f.channel().writeAndFlush(MsgUtil.buildMsg(f.channel().id().toString(),"你好，使用protobuf通信格式的服务端，我是sb"));
+            f.channel().writeAndFlush(MsgUtil.buildMsg(f.channel().id().toString(),"你好，使用protobuf通信格式的服务端，我是sb"));
+            f.channel().writeAndFlush(MsgUtil.buildMsg(f.channel().id().toString(),"你好，使用protobuf通信格式的服务端，我是sb"));
+
             f.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -37,4 +45,5 @@ public class NettyClient {
             workerGroup.shutdownGracefully();
         }
     }
+
 }
