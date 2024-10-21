@@ -40,4 +40,5 @@ record:
   同时主流的Spring Webflux默认是使用的Netty
 
 - 2024-10-20 Netty与SpringBoot整合
+- 2024-10-21 Netty使用Protobuf传输数据test
 
