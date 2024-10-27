@@ -42,4 +42,7 @@ record:
 - 2024-10-20 Netty与SpringBoot整合
 - 2024-10-21 Netty使用Protobuf传输数据test
 - 2024-10-22 Netty使用Protobuf传输数据补充
+- 2024-10-27 Netty传输Java对象 etty在实际应用级开发中，有时候某些特定场景下会需要使用Java对象类型进行传输，但是如果使用Java本身序列化进行传输，
+  那么对性能的损耗比较大。为此我们需要借助protostuff-core的工具包将对象以二进制形式传输并做编码解码处理。 
+  与直接使用protobuf二进制传输方式不同，这里不需要定义proto文件，而是需要实现对象类型编码解码器，用以传输自定义Java对象。
 

@@ -11,6 +11,8 @@
 
     <properties>
         <netty_version>4.1.36.Final</netty_version>
+        <protostuff.version>1.0.10</protostuff.version>
+        <objenesis.version>2.4</objenesis.version>
     </properties>
 
     <modules>
@@ -23,6 +25,28 @@
             <version>2.2.5.RELEASE</version>
             <type>pom</type>
             <scope>import</scope>
+        </dependency>
+        <!-- Protostuff -->
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-core</artifactId>
+            <version>${protostuff.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-runtime</artifactId>
+            <version>${protostuff.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.objenesis</groupId>
+            <artifactId>objenesis</artifactId>
+            <version>${objenesis.version}</version>
+        </dependency>
+        <!-- fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.58</version>
         </dependency>
         <!-- protobuf -->
         <dependency>
